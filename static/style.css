@@ -1,0 +1,195 @@
+/* General Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Carousel Fullscreen Styling */
+.carousel-item {
+    position: relative;
+    text-align: center;
+    height: 100vh; /* Fullscreen height */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures proper fit without stretching */
+}
+
+/* Overlay for Better Readability */
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+/* Main Heading */
+.carousel-caption h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Subtext Styling */
+.carousel-caption p {
+    font-size: 1.3rem;
+    color: #ddd;
+}
+
+/* Call-to-Action Button */
+.carousel-caption .btn {
+    background-color: #00bfff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #0088cc;
+}
+
+/* Verse Text for Overlay */
+.verse-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    width: 80%;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item.active .verse-text {
+    opacity: 1; /* Fade in when active */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .carousel-caption h3 {
+        font-size: 2rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .verse-text {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-caption h3 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    .verse-text {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: #006666;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+    height: 100vh; /* Fullscreen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.welcome-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.church-logo {
+    max-width: 150px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.welcome-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+/* Section Divider */
+.section-divider {
+    margin: 40px auto;
+    width: 80%;
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #ccc, #000, #ccc);
+    border-radius: 2px;
+}
+
+/* Navbar Styling */
+.navbar-brand img {
+    height: 50px; /* Adjust logo size */
+    width: auto;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: #004d4d; /* Match your theme */
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00bfff;
+}
+
+/* Buttons */
+.btn-teal {
+    background-color: #007b7f;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn-teal:hover {
+    background-color: #005f60;
+}
